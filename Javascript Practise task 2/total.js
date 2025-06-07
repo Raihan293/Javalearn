@@ -8,9 +8,12 @@ const product = [
 ]
 
 function getShoppingTotal(products){
+    let totalprice =0;
     for(const product of products){
-        
+        totalprice = totalprice+ product;
     }
+
+    return totalprice;
 }
 
 const total = getShoppingTotal(products);
